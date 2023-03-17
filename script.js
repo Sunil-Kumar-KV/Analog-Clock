@@ -22,3 +22,11 @@ modeSwitch.addEventListener("click", () => {
   // set localStorage "mode" item based on "dark" class presence
   localStorage.setItem("mode", isDarkMode ? "Dark Mode" : "Light Mode");
 });
+
+const updateTime = () => {
+  // Get current time and calculate degrees for clock hands
+  let date = new Date(),
+    secToDeg = (date.getSeconds() / 60) * 360,
+    minToDeg = (date.getMinutes() / 60) * 360,
+    hrToDeg = (date.getHours() / 12) * 360;
+
