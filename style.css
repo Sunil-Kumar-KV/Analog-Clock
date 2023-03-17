@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background: var(--primary-color);
+  background: var(--Secondary-color);
 }
 body.dark {
   --primary-color: #242526;
