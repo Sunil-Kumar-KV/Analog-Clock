@@ -74,6 +74,8 @@ body.dark {
   background: var(--black-color);
   border: 4px solid var(--red-color);
 }
+
+/* Middle container */
 .indicator .hand {
   position: absolute;
   height: 130px;
