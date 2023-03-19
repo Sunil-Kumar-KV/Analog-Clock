@@ -106,3 +106,10 @@ body.dark {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
+#speaker {
+	margin-left: 169px;
+}
+#speaker:hover {
+	cursor:pointer;
+}
