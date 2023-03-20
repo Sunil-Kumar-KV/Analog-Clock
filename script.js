@@ -50,6 +50,10 @@ speaker.onclick = function(e) {
 	if (min < 10 && min > 1) {
 	min = 'o' + min;
 	}
+	
+	var utterThis = new SpeechSynthesisUtterance(`The time is ${hour} ${min}`);
+	synth.speak(utterThis);
+};
 
 
 // call updateTime to set clock hands every second
