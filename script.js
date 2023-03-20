@@ -55,7 +55,6 @@ speaker.onclick = function(e) {
 	synth.speak(utterThis);
 };
 
-
 // call updateTime to set clock hands every second
 setInterval(updateTime, 1000);
 
