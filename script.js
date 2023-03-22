@@ -37,26 +37,3 @@ const updateTime = () => {
   hourHand.style.transform = `rotate(${hrToDeg}deg)`;
 };
 
-cloneTicks();	
-setInterval(setTime, 1000);
-
-speaker.onclick = function(e) {
-	e.preventDefault;
-
-	if (min === 0) {
-	min = hour;
-	hour = 'Even';
-	}
-	if (min < 10 && min > 1) {
-	min = 'o' + min;
-	}
-	
-	var utterThis = new SpeechSynthesisUtterance(`The time is ${hour} ${min}`);
-	synth.speak(utterThis);
-};
-
-// call updateTime to set clock hands every second
-setInterval(updateTime, 1000);
-
-//call updateTime function on page load
-updateTime();
