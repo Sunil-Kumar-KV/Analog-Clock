@@ -36,4 +36,3 @@ const updateTime = () => {
   minuteHand.style.transform = `rotate(${minToDeg}deg)`;
   hourHand.style.transform = `rotate(${hrToDeg}deg)`;
 };
-
